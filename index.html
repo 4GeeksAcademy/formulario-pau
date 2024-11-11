@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Payment form example</h2>
+        
+        <div class="alert">
+            <p>Some fields are missing</p>
+        </div>
+        
+        <form>
+            <!-- Primera fila -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="card">Card #</label>
+                    <input type="text" id="card" placeholder="XXXXXXXXXXXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="cvc">CVC #</label>
+                    <input type="text" id="cvc" placeholder="0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <div class="amount-field">
+                        <span>$</span>
+                        <input type="text" id="amount" placeholder="Amount">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda fila -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="First Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Last Name">
+                </div>
+            </div>
+
+            <!-- Tercera fila -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="City">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <select id="state">
+                        <option>Pick a state</option>
+                        <option>State 1</option>
+                        <option>State 2</option>
+                        <option>State 3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" placeholder="Postal Code">
+                </div>
+            </div>
+
+            <!-- Cuarta fila -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Add any notes here."></textarea>
+                </div>
+            </div>
+
+            <!-- Quinta fila -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label>We accept:</label>
+                    <div class="payment-icons">
+                        <!-- Aquí irían los íconos de métodos de pago -->
+                        <span>Icons</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="form-actions">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="send">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
